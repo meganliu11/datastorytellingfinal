@@ -17,7 +17,7 @@ color: #111;
 .landing {
 position: relative;
 height: 100vh;
-background: #f9f9f9;
+background: white;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -26,36 +26,11 @@ text-align: center;
 padding: 2rem;
 }
 
-.landing {
-  max-width: 700px;
-  margin: 5rem auto 3rem;
-  padding: 0 1rem;
-  text-align: center;
-}
-
-.headline {
-  font-family: 'Georgia', serif;
-  font-size: 2.2rem;
-  font-weight: 700;
-  line-height: 1.4;
-  margin-bottom: 0.5rem;
-  color: #111;
-}
-
-.byline {
-  font-family: 'Arial', sans-serif;
-  font-size: 0.95rem;
-  color: #555;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-}
-
-.divider {
-  width: 60px;
-  border: none;
-  border-top: 1px solid #ccc;
-  margin: 0 auto 2rem;
+.landing-graphic {
+  width: 100%;
+  max-width: 1000px;
+  margin: 10px auto;
+  display: block;
 }
 
 .landing h1 {
@@ -87,6 +62,24 @@ font-weight: 400;
 font-family: 'Georgia', serif;
 }
 
+.section-title {
+  font-family: "Georgia", serif;
+  font-size: 2.55rem;
+  font-weight: 500;
+  color: #000000;
+  margin-bottom: 0.25rem;
+  line-height: 1.25;
+}
+
+.underline {
+  width: 100px;
+  margin: 1.55rem 0 1rem 0;
+  max-width: 400px;
+  border: none;
+  border-bottom: 1.25px solid #111;
+}
+
+
 /* Article content */
 .article {
 max-width: 600px;
@@ -96,8 +89,9 @@ padding: 0 1rem;
 
 .article h3 {
 font-family: 'Georgia', serif;
-font-size: 1.5rem;
+font-size: 1.25rem;
 margin-top: 2.5rem;
+margin-bottom: .5rem;
 }
 
 .article p {
@@ -143,7 +137,7 @@ transition: opacity 0.5s ease-out;
 }
 
 .pull-quote-wrapper {
-  margin: 3rem -130px; /* Adjust to how much you want it to break out */
+  margin: 3rem -130px; /* Adjust to how much to break out */
 }
  </style>
 
@@ -151,9 +145,7 @@ transition: opacity 0.5s ease-out;
 
   <!-- Landing screen -->
   <div class="landing">
-    <h1 class="headline">A Silent Mismatch: How a Different Therapy Could Save the Asian American Mental Health Crisis</h1>
-    <p class="byline">By Megan Liu</p>
-    <hr class="divider" />
+    <img src="images/landing-graphic.png" class="landing-graphic">
   </div>
   
 
@@ -163,10 +155,12 @@ transition: opacity 0.5s ease-out;
 
   <!-- Main Article  -->
 &nbsp;&nbsp;<div class="article">
+    <h2 class="section-title">A Silent Mismatch: How a different kind of therapy could benefit Asian Americans</h2> 
+    <hr class="underline" />
     <h3>
 By Megan Liu</h3>
 Data Storytelling final, Spring, 2025.&nbsp;<br>
-<br>
+
 <p>A young woman sits in the corner of a community counseling center in Manhattan’s Chinatown. She scrolls absently on her phone, earbuds tucked in, head down, shoulders tight. Around her, conversations flow in Mandarin, Cantonese, and Korean, with the occasional sound of laughter through otherwise long silences.&nbsp;<br>
 <br>When her name is called, she hesitates for a beat, glancing up shyly at the therapist, one of few counselors here who speaks her family’s dialect. As she rises, something lingers in the air. The months, maybe years, it took for her to walk through these doors.&nbsp;<br>
 <br>For many young Asian Americans like her, finding help is not the hard part. It’s finding someone who truly understands where they are coming from and why asking for help feels like crossing an invisible line drawn generations ago. 
@@ -205,7 +199,7 @@ Data Storytelling final, Spring, 2025.&nbsp;<br>
 <div class="chart">
     <div style="min-height:276px" id="datawrapper-vis-WoV7t"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/WoV7t/embed.js" charset="utf-8" data-target="#datawrapper-vis-WoV7t"></script><noscript><img src="https://datawrapper.dwcdn.net/WoV7t/full.png" alt="" /></noscript></div>
 </div>
-<br><p>This is also reinforced by the model minority myth, a stereotype that portrays Asian Americans as uniformly high-achieving and self-sufficient. While often perceived as positive, it can mask the diversity of experiences and discourage help-seeking. 
+<p>This is also reinforced by the model minority myth, a stereotype that portrays Asian Americans as uniformly high-achieving and self-sufficient. While often perceived as positive, it can mask the diversity of experiences and discourage help-seeking. 
 </p>
 </p><div class="pull-quote-wrapper">
   
@@ -252,6 +246,6 @@ A 2016 study by Dr. Gordon C. Hall and colleagues, published in Behavior Therapy
   <p></p></div>
 Note: This article uses “Asian American” when referring to specific cultural experiences and interviews. When citing sources that include Native Hawaiian and Pacific Islander populations, the term “AANHPI” is used to reflect the broader demographic classification found in those sources. While Native Hawaiian and Pacific Islander populations are often grouped under broader terms like “AAPI” or “AANHPI”, their histories, identities, and mental health challenges are distinct. 
 <br><br>
-How I made this: I coded this with vs and github and gitpages, I used AI / chatgpt to help me troubleshoot the coding (esp the landing page javascript fade). I prompted it to help me create a starting template for a news style article and then I adjusted it from there! The charts were made with data I compiled onto a spreadsheet and then I either made it through sheets or datawrapper. For example, I made the landing graphic through figma and wanted it to “fade” so I asked chatgpt to help me input a code that would make that happen.&nbsp;<br><br>
+How I made this: I coded this with vs code and github, I used AI / chatgpt to help me troubleshoot the coding (esp the landing page javascript fade). I prompted it and then I adjusted it from there! The charts were made with data I gathered from other analyzed pdfs rather than a full csv dataset. Then I input the data into a table and made all the data viz through datawrapper! I was thinking of putting it through figma to change the font but I wanted to keep the interaction datawrapper offered.&nbsp;<br><br>
 
 
